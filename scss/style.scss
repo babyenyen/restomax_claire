@@ -93,19 +93,16 @@ body {
 }
 
 .formulaire {
-    padding: 20px 100px;
+    margin: 20px 100px;
     color: #1D3459;
     display: flex;
-    flex-wrap: wrap;
-    .formulairecontainer {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        background-color: rgba(237, 163, 138, 0.18);
-        padding: 30px 50px;
-        border-radius: 16px;
+    justify-content: space-between;
+    background-color: rgba(237, 163, 138, 0.18);
+    padding: 30px 50px 100px 50px;
+    border-radius: 16px;
+    position: relative;
         .formgauche {
-            width: 350px;
+            width: 33%;
             h2 {
                 font-family: 'Block-Berthold-Condensed';
                 font-size: 64px;
@@ -118,47 +115,62 @@ body {
             }
         }
         .formdroite {
-            width: 800px;
+            font-family: "Inter", sans-serif;
+            width: 66%;
             form {
                 .form-group {
                     display: flex;
                     flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 18px;
                     .form-field {
-                        width: 350px;
                         margin: 0 25px;
-                        background-color: red;
+                        select {
+                            width: 310px;
+                        }
+                        input {
+                            width: 280px;
+                        }
                         input, select {
-                            width: 350px;
+                            // width: 350px;
                             padding: 15px;
-                            margin: 10px 0;
-                            border: none;
-                            border-radius: 40px;
-                            background-color: blue;
+                            margin: 10px 0;border: none; /* Remove the border */
+                            border-bottom: 1px solid #1D3459; /* Add a bottom border */
+                            background-color: rgba(237, 163, 138, 0);
+                            color: #1D3459;
+                        }
+                        ::placeholder {
+                            color: #1D3459;
                         }
                     }
                     
                 }
                 
-                
-
-                button {
-                    background-color: #EDA38A;
-                    padding: 15px 20px;
-                    border-radius: 40px;
-                    border: none;
-                    color: #1D3459;
-                    font-family: "Inter", sans-serif;
-                    margin: 10px 0;
-                }
                 .consent-checkbox {
-                    width: 300px;
+                    margin: 55px 65px;
+                    font-size: 16px;
                 }
             }
+            button {
+                background-color: #EDA38A;
+                padding: 15px 20px;
+                border-radius: 40px;
+                border: none;
+                color: #1D3459;
+                font-family: "Inter", sans-serif;
+                position: absolute;
+                right: calc(50% - 90px);
+                bottom: 45px;
+            }
         }
-    }
     
 }
 
+.sell {
+    
+
+}
 
 
 
