@@ -1,0 +1,174 @@
+@font-face {
+    font-family: 'Block-Berthold-Condensed'; /* Le nom que tu donnes à la police */
+    src: url('../fonts/Block-Berthold-Condensed.ttf') format('truetype'); /* Chemin vers ta police */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import "mobile" ;
+
+@media (min-width: 1024px) {
+
+body {
+    background-color: #FFF1E0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+
+.header {
+    display: flex;
+    padding: 48px;
+    justify-content: space-between;
+
+    a {
+        img {
+            width: 190px;
+        }
+    }
+
+    .headerdr {
+        font-family: "Inter", sans-serif;
+        a {
+            text-decoration: none;
+            color: #1D3459;
+        }
+        .inscrip {
+            background-color: #EDA38A;
+            padding: 15px 20px;
+            border-radius: 40px;
+        }
+        .lang {
+            background-color: rgba(237, 163, 138, 0.18);
+            padding: 15px 20px;
+            border-radius: 40px;
+            margin-left: 10px;
+        }
+
+    }
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 50px 150px;
+    .herogauche {
+        color: #1D3459;
+        width: 500px;
+        h1 {
+            font-family: 'Block-Berthold-Condensed';
+            font-size: 80px;
+            margin: 0;
+        }
+        p {
+            font-family: "Inter", sans-serif;
+            font-size: 18px;
+            margin: 15px 0 45px 0;
+            span {
+                font-weight: bold;
+            }
+        }
+        a {
+            background-color: #EDA38A;
+            padding: 15px 20px;
+            border-radius: 40px;
+            text-decoration: none;
+            font-family: "Inter", sans-serif;
+            color: #1D3459;
+            margin: 10px 0;
+        }
+    }
+    .herodroite {
+        img {
+            width: 550px;
+        }
+    }
+    .promo {
+        position: absolute;
+        right: 500px;
+        top: 50px;
+    }
+}
+
+.formulaire {
+    padding: 20px 100px;
+    color: #1D3459;
+    display: flex;
+    flex-wrap: wrap;
+    .formulairecontainer {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        background-color: rgba(237, 163, 138, 0.18);
+        padding: 30px 50px;
+        border-radius: 16px;
+        .formgauche {
+            width: 350px;
+            h2 {
+                font-family: 'Block-Berthold-Condensed';
+                font-size: 64px;
+                margin: 0;
+            }
+            p {
+                font-family: "Inter", sans-serif;
+                font-size: 18px;
+                margin: 15px 0;
+            }
+        }
+        .formdroite {
+            width: 800px;
+            form {
+                .form-group {
+                    display: flex;
+                    flex-wrap: wrap;
+                    .form-field {
+                        width: 350px;
+                        margin: 0 25px;
+                        background-color: red;
+                        input, select {
+                            width: 350px;
+                            padding: 15px;
+                            margin: 10px 0;
+                            border: none;
+                            border-radius: 40px;
+                            background-color: blue;
+                        }
+                    }
+                    
+                }
+                
+                
+
+                button {
+                    background-color: #EDA38A;
+                    padding: 15px 20px;
+                    border-radius: 40px;
+                    border: none;
+                    color: #1D3459;
+                    font-family: "Inter", sans-serif;
+                    margin: 10px 0;
+                }
+                .consent-checkbox {
+                    width: 300px;
+                }
+            }
+        }
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
