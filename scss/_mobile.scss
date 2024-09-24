@@ -1,0 +1,371 @@
+@media (max-width: 1024px) {
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFF1E0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    padding: 48px;
+    justify-content: space-between;
+    background-color: transparent; /* Pas de fond pour le header */
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-image: url("../img/hero.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 70vh;
+    .logo {
+        height: 35px;
+        width: 35%;
+        display: flex;
+        align-content: center;
+        svg {
+            width: 100%;
+            height: auto;
+            fill: white;
+        }
+    }
+    .headerdr {
+        font-family: "Inter", sans-serif;
+        margin-top: 10px;
+        a {
+            text-decoration: none;
+            color: #1D3459;
+        }
+        .inscrip {
+            background-color: #EDA38A;
+            padding: 10px 15px;
+            border-radius: 40px;
+            font-size: clamp(12px, 2vw, 18px);
+        }
+        .lang {
+            background-color: rgba(237, 163, 138, 0.18);
+            padding: 10px 15px;
+            border-radius: 40px;
+            margin-left: 10px;
+            color: white;
+            font-size: clamp(12px, 2vw, 18px);
+        }
+    }
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px 50px 50px;
+    .herogauche {
+        width: 100%;
+        h1 {
+            color: white;
+            font-family: 'Block-Berthold-Condensed';
+            text-transform: uppercase;
+            font-size: clamp(40px, 5vw, 80px);
+            margin: 0;
+            position: absolute;
+            top: -150px;
+            width: calc(100% - 100px);
+        }
+        p {
+            font-family: "Inter", sans-serif;
+            font-size: clamp(12px, 2vw, 18px);
+            margin: 15px 0 45px 0;
+            line-height: 30px;
+            color: #1D3459;
+            span {
+                font-weight: bold;
+            }
+        }
+        a {
+            background-color: #EDA38A;
+            padding: 15px 20px;
+            border-radius: 40px;
+            text-decoration: none;
+            font-family: "Inter", sans-serif;
+            color: #1D3459;
+            margin: 10px 0;
+        }
+    }
+    .herodroite {
+        display: none;
+    }
+    .promo {
+        position: absolute;
+        right: -60px;
+        top: -450px;
+    }
+}
+
+.formulaire {
+    margin: 50px 25px;
+    color: #1D3459;
+    background-color: rgba(237, 163, 138, 0.18);
+    padding: 30px 25px 80px 25px;
+    border-radius: 16px;
+    display: block;
+        .formgauche {
+            width: 100%;
+            h2 {
+                font-family: 'Block-Berthold-Condensed';
+                text-transform: uppercase;
+                font-size: clamp(32px, 4vw, 64px);
+                margin: 0;
+            }
+            p {
+                font-family: "Inter", sans-serif;
+                font-size: clamp(12px, 2vw, 18px);
+                margin: 15px 0;
+                line-height: 30px;
+            }
+        }
+        .formdroite {
+            font-family: "Inter", sans-serif;
+            width: 100%;
+            margin: 0;
+            form {
+                .form-group {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 18px;
+                    .form-field {
+                        width: 100%;
+                        margin: 0;
+                        input, select {
+                            width: 100%;
+                            box-sizing: border-box;
+                            padding: 15px;
+                            margin: 10px 0;border: none; /* Remove the border */
+                            border-bottom: 1px solid #1D3459; /* Add a bottom border */
+                            background-color: rgba(237, 163, 138, 0);
+                            color: #1D3459;
+                        }
+                        ::placeholder {
+                            color: #1D3459;
+                        }
+                    }
+                    
+                }
+                
+                
+            }
+            .consent-checkbox {
+                margin: 30px 0;
+                font-size: 16px;
+            }
+            button {
+                background-color: #EDA38A;
+                padding: 15px 20px;
+                border-radius: 40px;
+                border: none;
+                color: #1D3459;
+                font-family: "Inter", sans-serif;
+                position: absolute;
+                right: calc(50% - 90px);
+                bottom: 30px;
+            }
+            
+        }
+    
+}
+
+.secsell {
+    margin: 50px 50px;
+    color: #1D3459;
+    .sell {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        padding: 50px 0;
+        .selltext {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            margin-top: 20px;
+            h3 {
+                font-family: 'Block-Berthold-Condensed';
+                text-transform: uppercase;
+                font-size: clamp(22px, 4vw, 40px);
+                margin: 0;
+            }
+            p {
+                font-family: "Inter", sans-serif;
+                font-size: clamp(10px, 4vw, 18px);
+                margin: 15px 0;
+                line-height: 30px;
+            }
+            a{
+                background-color: #1D3459;
+                padding: 15px 20px;
+                border-radius: 40px;
+                text-decoration: none;
+                font-family: "Inter", sans-serif;
+                color: #FFF1E0;
+                margin: 10px 0;
+                display: flex;
+                justify-content: center;
+                width: 100%;
+            }
+        }
+        .sellimg {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.secreviews {
+    margin: 50px 50px 150px 50px;
+    color: #1D3459;
+    h2 {
+        font-family: 'Block-Berthold-Condensed';
+        text-transform: uppercase;
+        font-size: clamp(32px, 4vw, 64px);
+        margin: 0;
+        width: 100%;
+    }
+    .reviews {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px 0 20px 0;
+        .review {
+            background-color: rgba(237, 163, 138, 0.18);
+            width: 100%;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            border-radius: 32px;
+            margin-top: 20px;
+            .review-details {
+                margin-left: 5%;
+                .reviewer-name {
+                    font-family: 'inter', sans-serif;
+                    font-size: clamp(12px, 4vw, 18px);
+                }
+                .review-stars {
+                    span {
+                        font-size: 23px;
+                    }
+                }
+                .review-comment {
+                    font-family: 'inter', sans-serif;
+                    font-size: clamp(10px, 4vw, 16px);
+                    line-height: 30px;
+                }
+            }
+        }
+    }
+    a {
+        background-color: #EDA38A;
+        padding: 15px 20px;
+        border-radius: 40px;
+        text-decoration: none;
+        font-family: "Inter", sans-serif;
+        color: #1D3459;
+        margin: 10px 0;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+.formulaire2 {
+    margin: 50px 25px 100px 25px;
+    color: #1D3459;
+    background-color: rgba(237, 163, 138, 0.18);
+    padding: 30px 25px 80px 25px;
+    border-radius: 16px;
+    display: block;
+        .formgauche2 {
+            width: 100%;
+            h2 {
+                font-family: 'Block-Berthold-Condensed';
+                text-transform: uppercase;
+                font-size: clamp(32px, 4vw, 64px);
+                margin: 0;
+            }
+            p {
+                font-family: "Inter", sans-serif;
+                font-size: clamp(12px, 2vw, 18px);
+                margin: 15px 0;
+                line-height: 30px;
+            }
+        }
+        .formdroite2 {
+            font-family: "Inter", sans-serif;
+            width: 100%;
+            margin: 0;
+            form {
+                .form-group2 {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 18px;
+                    .form-field {
+                        width: 100%;
+                        margin: 0;
+                        input, select {
+                            width: 100%;
+                            box-sizing: border-box;
+                            padding: 15px;
+                            margin: 10px 0;border: none; /* Remove the border */
+                            border-bottom: 1px solid #1D3459; /* Add a bottom border */
+                            background-color: rgba(237, 163, 138, 0);
+                            color: #1D3459;
+                        }
+                        ::placeholder {
+                            color: #1D3459;
+                        }
+                    }
+                    
+                }
+                
+                
+            }
+            .consent-checkbox {
+                margin: 30px 0;
+                font-size: 16px;
+            }
+            button {
+                background-color: #EDA38A;
+                padding: 15px 20px;
+                border-radius: 40px;
+                border: none;
+                color: #1D3459;
+                font-family: "Inter", sans-serif;
+                position: absolute;
+                right: calc(50% - 90px);
+                bottom: 30px;
+            }
+            
+        }
+    
+}
+
+
+
+
+
+
+
+}
